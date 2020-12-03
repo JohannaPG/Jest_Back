@@ -1,0 +1,30 @@
+import CreateCustomUser from '../../src/user/services/CreateCustomUser'
+import { userAuthMaker } from '../models/user_auth'
+import CreateAdminToken from '../../src/auth/services/CreateAdminToken'
+import  { SelectAuthByUserId } from '../../src/auth/querys/index'
+
+
+let REQUEST_TOKEN = ''
+
+beforeAll(async () => {
+  const { data } = await CreateAdminToken()
+  REQUEST_TOKEN = data.token
+ 
+})
+
+describe('Crear estudiante y replicar en Ms Auth', () => {
+   it.skip('Crear estudiante con sus atributos', async () => {
+const role = 'STUDENT'
+   const student = userAuthMaker(role)
+   const {
+    data: {data}
+  }
+   = await CreateCustomUser(student, REQUEST_TOKEN)
+   
+   await new Promise((resolve) => setTimeout(resolve, 5000))
+   await SelectAuthByUserId(data.id)
+   })
+})
+
+
+

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Crear curso válido y actualizar atributos permitidos Crear y obtener un curso con estructura válida 1`] = `
+Object {
+  "code": 2,
+  "data": Object {
+    "achievements": Array [
+      "Al finalizar el curso, el estudiante aplica políticas, procedimientos y herramientas de gestión derecursos humanos, de manera sistémica y ética",
+    ],
+    "code": "100000XYZW",
+    "contentTypes": Array [
+      "VIDEO",
+      "AUDIO",
+      "PDF",
+    ],
+    "courseId": "76ee7cf9-7dd4-5a6e-a045-352023dc11ca",
+    "description": "El curso Custom pretende que el estudiante conozca las organizaciones e instituciones y cómo éstas pueden obtener ventajas competitivas en base al desarrollo de su personal. Tendrá en cuenta las herramientas idóneas para desarrollar modelos de trabajo de alto desempeño y con resultados que beneficiarán tanto a los trabajadores como la organización. Además, aplicará elementos conceptuales, analíticos y prácticos de la administración del personal, teniendo en cuenta aspectos administrativos gerenciales que influyan en el desarrollo de las personas y organizaciones en un mundo altamente competitivo y globalizado.",
+    "introduction": Object {
+      "height": 100,
+      "imageUrl": "http://placehold.it/",
+      "videoUrl": "https://vimeo.com/386031368/5a6248eefb",
+      "width": 100,
+    },
+    "language": "Español",
+    "level": "Básico",
+    "name": "Curso Custom",
+  },
+  "message": "OK",
+  "success": true,
+}
+`;
